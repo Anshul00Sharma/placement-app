@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MongoDB_URI = "mongodb://localhost/PlacementCell";
+const MongoDB_URI = "mongodb://localhost:27017/PlacementCell";
 mongoose.connect(process.env.MongoDB_URI || MongoDB_URI);
 
 const db = mongoose.connection;
